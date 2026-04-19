@@ -5,7 +5,7 @@ import { DropdownMenu, DropdownMenuContent, DropdownMenuItem, DropdownMenuTrigge
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
 import { useTheme } from "@/components/theme-provider";
 import { useI18n } from "@/lib/i18n";
-const logoUrl = `${import.meta.env.BASE_URL}logo.png`;
+import logoUrl from "@/assets/logo.png";
 
 export function Navbar() {
   const { t, lang, setLang, dir } = useI18n();
@@ -25,7 +25,7 @@ export function Navbar() {
         <Link href="/" className="flex items-center gap-3">
 
           <div className="h-12 w-12 rounded-full shadow-lg flex justify-end items-center dark:shadow-md  dark:border-1 dark:shadow-amber-50">
-            <img src={logoUrl} alt={t("common.brand")} className="ps-[7px]" />
+            <img src={logoUrl} alt={t("common.brand")} className="ltr:pe-[7px] rtl:ps-[7px]" />
           </div>
 
           <span className="hidden max-w-52 text-sm font-black leading-tight sm:inline-block">{t("common.brand")}</span>

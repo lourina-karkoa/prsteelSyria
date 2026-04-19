@@ -2,7 +2,7 @@ import { Link } from "wouter";
 import { Mail, MapPin, Phone } from "lucide-react";
 import { useI18n } from "@/lib/i18n";
 import { contact, content } from "@/lib/content";
-
+import logoUrl from "@/assets/logo.png";
 export function Footer() {
   const { t, lang } = useI18n();
   const c = content[lang];
@@ -54,7 +54,7 @@ export function Footer() {
         {/* LOGO */}
         <div className="lg:col-span-2">
           <div className="flex items-center gap-2 justify-center md:justify-start">
-            <img src="/logo.png" className="w-11" />
+            <img src={logoUrl} className="w-11" />
             <h3 className="text-xl lg:text-2xl font-black text-primary">
               {t("common.brand")}
             </h3>

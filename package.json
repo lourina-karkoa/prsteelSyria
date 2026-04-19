@@ -1,11 +1,13 @@
 {
   "name": "prosthetics-center-frontend",
+  "homepage": "https://lourina-karkoa.io/prsteelSyria",
   "version": "1.0.0",
   "private": true,
   "type": "module",
   "scripts": {
-    "dev": "vite --host 0.0.0.0",
+    "dev": "vite",
     "build": "vite build",
+    "deploy": "gh-pages -d dist",
     "preview": "vite preview --host 0.0.0.0"
   },
   "dependencies": {
@@ -40,6 +42,7 @@
     "@types/node": "^24.10.1",
     "@types/react": "^19.2.7",
     "@types/react-dom": "^19.2.3",
+    "gh-pages": "^6.3.0",
     "typescript": "~5.9.2"
   }
 }

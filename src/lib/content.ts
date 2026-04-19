@@ -1,15 +1,23 @@
 import type { Language } from "./i18n";
 export type Localized<T> = Record<Language, T>;
+import logo1 from "@/assets/combany/logo-1.png";
+import logo2 from "@/assets/combany/logo-2.png";
+import logo3 from "@/assets/combany/logo-3.png";
+import logo4 from "@/assets/combany/logo-4.png";
+import logo5 from "@/assets/combany/logo-5.png";
+import logo6 from "@/assets/combany/logo-6.png";
+import logo7 from "@/assets/combany/logo-7.png";
+import logo8 from "@/assets/combany/logo-8.png";
 
 const partners = [
-  "/combany/logo-1.png",
-  "/combany/logo-2.png",
-  "/combany/logo-3.png",
-  "/combany/logo-4.png",
-  "/combany/logo-5.png",
-  "/combany/logo-6.png",
-  "/combany/logo-7.png",
-  "/combany/logo-8.png",
+  logo1,
+  logo2,
+  logo3,
+  logo4,
+  logo5,
+  logo6,
+  logo7,
+  logo8,
 ];
 export const contact = {
   whatsapp: "+963937409397",

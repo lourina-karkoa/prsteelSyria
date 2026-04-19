@@ -5,7 +5,7 @@ import { useForm } from "react-hook-form";
 import { z } from "zod";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { consultationFields } from "@/lib/formFields";
-
+import logoF from '../assets/logo.png'
 import {
   Users,
   Clock,
@@ -206,7 +206,7 @@ export function HeroSection() {
           >
             {/* الصورة */}
             <img
-              src="/logo.png"
+              src={logoF}
               alt="prosthetic"
               className="w-full h-full object-contain transition duration-700 hover:scale-105"
             />
