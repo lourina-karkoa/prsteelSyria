@@ -6,10 +6,13 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "npx vite build",
+    "build": "vite build",
     "deploy": "gh-pages -d dist",
     "preview": "vite preview --host 0.0.0.0"
   },
+  "engines": {
+  "node": "18.x"
+},
   "dependencies": {
     "@hookform/resolvers": "^3.10.0",
     "@radix-ui/react-dialog": "^1.1.7",
